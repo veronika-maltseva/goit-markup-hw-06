@@ -356,6 +356,7 @@ img {
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
+        flex-basis: calc((100% - 3 * 24px) / 4);
     }
 }
 
@@ -369,7 +370,7 @@ img {
 }
 
 .features-section {
-    padding: 120 0;
+    padding: 120px 0;
 }
 
 @media screen and (min-width:768px) {
@@ -550,6 +551,16 @@ img {
     }
 }
 
+@media screen and (min-width:768px) and (max-width:1158px) {
+    .team-section {
+        flex-direction: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;
+        justify-content: center;
+    }
+}
+
 .section-team {
     background-color: var(--logo-down-cl);
     padding: 120px 0;
@@ -643,6 +654,13 @@ img {
         flex-wrap: wrap;
         column-gap: 16px;
         row-gap: 72px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1157px) {
+    .section-customers {
+        flex-wrap: wrap;
+        column-gap: 24px;
     }
 }
 
