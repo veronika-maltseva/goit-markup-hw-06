@@ -1210,15 +1210,16 @@ img {
 
 .menu-toggle {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-left: auto;
-    padding: 0;
+    padding: 8px;
     background-color: transparent;
     cursor: pointer;
     border: none;
-    border-radius: 50%;
     outline: none;
+    border: 1px solid var(--border-clr);
+    border-radius: 50%;
 }
 
 .menu-toggle-icon {
@@ -1242,7 +1243,11 @@ img {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 40px;
 
     background-color: var(--main-background-cl);
     z-index: 999;
@@ -1276,24 +1281,75 @@ img {
     list-style: none;
 }
 
+.mobile-menu-li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-menu-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.mobile-menu-li:not(last-child) {
+    margin-bottom: 40px;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus,
+.mobile-menu-link:active {
+    color: var(--main-logo-cl);
+}
+
 .mobile-menu .link {
     display: block;
-    padding: 10px;
+    row-gap: 40px;
     color: var(--logo-up-nav-cl);
     text-decoration: none;
 }
 
+.mobile-address {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 48px;
+}
+
+.mob-address-tel {
+    color: var(--main-logo-cl);
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.mob-address-mail {
+    color: var(--main-dark-cl);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+}
+
 .mobile-icons-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 56px;
+    padding-bottom: 40px;
 }
 
 .mobile-icon-link {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     border-radius: 50%;
     background-color: var(--main-logo-cl);
     width: 100%;
@@ -1310,6 +1366,7 @@ img {
 }
 
 .menu-toggle-close {
-    min-width: 8px;
-    min-height: 8px;
+    width: 8px;
+        height: 8px;
+        flex-shrink: 0;
 }
