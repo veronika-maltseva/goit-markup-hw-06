@@ -810,10 +810,27 @@ img {
     text-align: left;
 }
 
+@media screen and (max-width:767px) {
+    .footer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .footer-container {
     display: flex;
     align-items: baseline;
     
+}
+
+@media screen and (max-width:767px) {
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px;
+        padding-left: auto;
+        padding-right: auto;
+    }
 }
 
 .footer-logo-text {
@@ -847,11 +864,30 @@ img {
     margin-bottom: 16px;
 }
 
+@media screen and (max-width:767px) {
+    .footer-subtitle {
+        justify-content: center;
+    }
+}
+
 .footer-link {
     display: flex;
     margin-bottom: 16px;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+@media screen and (max-width:767px) {
+    .footer-link {
+            text-align: center;
+        }
+}
+
+@media screen and (max-width:767px) {
+    .footer-logo-text {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 }
 
 .footer-social-icons {
@@ -874,6 +910,13 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+}
+
+@media screen and (max-width:767px) {
+    .footer-icons-container {
+        padding-left: 94px;
+        padding-right: 94;
+    }
 }
 
 .footer-icon-link {
@@ -902,6 +945,12 @@ img {
     margin-left: auto;
 }
 
+@media screen and (max-width:767px) {
+    .subscribe-form {
+        flex-wrap: wrap;
+    }
+}
+
 .subscribe-form-label {
 }
 
@@ -916,6 +965,12 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;;
     margin-bottom: 16px;
+}
+
+@media screen and (max-width:767px) {
+    .footer-subscribe-desk {
+        text-align: center;
+    }
 }
 
 .subscribe-form-input {
@@ -937,6 +992,12 @@ img {
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+}
+
+@media screen and (max-width:767px) {
+    .subscribe-form-input {
+        width: 398px;
+    }
 }
 
 .subscribe-form-input:focus {
@@ -974,6 +1035,13 @@ img {
 
     border: none;
     border-radius: 4px;
+}
+
+@media screen and (max-width:767px) {
+    .subscribe-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .overlay-card {
