@@ -1491,6 +1491,11 @@ img {
     border-radius: 50%;
 }
 
+.close-mobile-menu {
+    width: 24px;
+    height: 24px;
+}
+
 .menu-burger {
     border: none;
 }
@@ -1638,9 +1643,4 @@ img {
 .mobile-icon {
     width: 40px;
     height: 40px;
-}
-
-.menu-toggle-close {
-    width: 8px;
-    height: 8px;
 }
