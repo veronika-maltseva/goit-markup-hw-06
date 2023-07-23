@@ -1060,6 +1060,11 @@ img {
     margin-left: auto;
 }
 
+@media screen and (max-width:427px) {
+    .footer-form {
+    }
+}
+
 @media screen and (max-width:767px) {
     .subscribe-form {
         flex-wrap: wrap;
@@ -1096,7 +1101,7 @@ img {
 }
 
 .subscribe-form-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--main-background-cl);
@@ -1116,9 +1121,26 @@ img {
     letter-spacing: 0.04em;
 }
 
+@media screen and (max-width:427px) {
+    .subscribe-form-input {
+        width: 288px;
+    }
+}
+
+@media screen and (min-width:428px) and (max-width:767px) {
+    .subscribe-form-input {
+            width: 398px;
+        }
+}
+
 @media screen and (max-width:767px) {
     .subscribe-form-input {
-        width: 398px;
+    }
+}
+
+@media screen and (min-width:1157px) {
+    .subscribe-form-input {
+        width: 264px;
     }
 }
 
