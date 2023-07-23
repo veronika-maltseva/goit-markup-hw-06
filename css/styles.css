@@ -1554,7 +1554,7 @@ img {
     text-transform: capitalize;
 }
 
-.mobile-menu-li:not(last-child) {
+.mobile-menu-nav {
     margin-bottom: 40px;
 }
 
@@ -1603,7 +1603,6 @@ img {
     display: flex;
     justify-content: flex-start;
     gap: 56px;
-    padding-bottom: 20px;
 }
 
 .mobile-icon-link {
