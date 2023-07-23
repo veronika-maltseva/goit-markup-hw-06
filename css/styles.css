@@ -69,6 +69,8 @@ main {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
@@ -290,7 +292,7 @@ img {
 
 .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/bg-hero.jpg);
+            url('../images/bg-hero-mob.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -298,6 +300,37 @@ img {
     color: var(--main-background-cl);
     max-width: 1440px;
     margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url('../images/bg-hero-mob@2x.jpg');
+    }
+}
+
+@media only screen and (min-width:428px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-hero-tab.jpg');
+    }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-hero-tab@2x.jpg');
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-hero-desk.jpg');
+    }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-hero-desk@2x.jpg');
+    }
 }
 
 .hero-title {
@@ -497,6 +530,10 @@ img {
     padding-bottom: 120px;
 }
 
+.what-img {
+    margin: 0 auto;
+}
+
 @media only screen and (max-width:1157px) {
     .main-what-section {
         display: none;
@@ -591,6 +628,10 @@ img {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-img {
+    margin: 0 auto;
 }
 
 .team-back {
@@ -1435,6 +1476,10 @@ img {
     border-radius: 50%;
 }
 
+.menu-burger {
+    border: none;
+}
+
 .menu-toggle-icon {
     stroke: var(--logo-up-nav-cl);
 }
@@ -1583,6 +1628,5 @@ img {
 
 .menu-toggle-close {
     width: 8px;
-        height: 8px;
-        flex-shrink: 0;
+    height: 8px;
 }
