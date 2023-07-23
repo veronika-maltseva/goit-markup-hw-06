@@ -1603,6 +1603,7 @@ img {
     display: flex;
     justify-content: flex-start;
     gap: 56px;
+    padding-bottom: 20px;
 }
 
 .mobile-icon-link {
