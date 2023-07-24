@@ -259,6 +259,7 @@ img {
 .address {
     font-style: normal;
     color: currentColor;
+    margin-bottom: 48px;
 }
 
 .address-link {
@@ -440,18 +441,17 @@ img {
 }
 
 .features-section {
-    padding: 120px 0;
 }
 
 @media screen and (min-width:768px) {
     .features-section {
-            padding-bottom: 96px;
         }
 }
 
 @media screen and (max-width:1157px) {
     .features-section {
             padding-top: 96px;
+            padding-bottom: 96px;
         }
 }
 
@@ -462,7 +462,7 @@ img {
 }
 
 @media only screen and (max-width:767px) {
-.features-li:not(last-child) {
+    .features-li {
         margin-bottom: 72px;
     }
 }
@@ -477,6 +477,12 @@ img {
     .features-li {
             width: calc((100% - 72px) / 4);
         }
+}
+
+@media only screen and (max-width:767px) {
+    .features-li-last {
+        margin-bottom: 0;
+    }
 }
 
 .features-section-icons {
@@ -785,9 +791,9 @@ img {
     height: 88px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (max-width:427px) {
     .customer-icon-box {
-        
+        width: 136px;
     }
 }
 
@@ -916,6 +922,17 @@ img {
     
 }
 
+@media screen and (max-width:427px) {
+    .footer-container {
+        width: 288px;
+    }
+}
+
+@media screen and (min-width:428px) and (max-width:767px) {
+    .footer-container {
+    }
+}
+
 @media screen and (max-width:767px) {
     .footer-container {
         display: flex;
@@ -1007,7 +1024,6 @@ img {
 
 @media screen and (max-width:767px) {
     .footer-link {
-            padding-left: 60px;
             text-align: center;
             margin-right: 0;
         }
@@ -1178,8 +1194,6 @@ img {
 
 .subscribe-form-icon {
     position: absolute;
-    width: 100%
-    height: 100%;
     top: 8px;
     right: 24px;
     fill: var(--main-background-cl);
@@ -1614,6 +1628,7 @@ img {
     padding-top: 80px;
     padding-left: 40px;
     padding-bottom: 40px;
+    justify-content: space-between;
 
     background-color: var(--main-background-cl);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -1682,8 +1697,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 48px;
-    margin-top: 244px;
 }
 
 .mob-address-tel {
@@ -1712,6 +1725,18 @@ img {
     gap: 56px;
 }
 
+@media screen and (max-width:427px) {
+    .mobile-icons-list {
+        gap: 28px;
+    }
+}
+
+@media screen and (max-width:427px) {
+    .mob-address-tel {
+        font-size: 24px;
+    }
+}
+
 .mobile-icon-link {
     display: flex;
     flex-wrap: nowrap;
@@ -1721,7 +1746,6 @@ img {
     background-color: var(--main-logo-cl);
     width: 100%;
     height: 100%;
-    margin-top: 8px;
     gap: 56px;
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1730,4 +1754,8 @@ img {
 .mobile-icon {
     width: 40px;
     height: 40px;
+}
+
+.mobile-social-icons {
+    
 }
