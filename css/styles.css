@@ -1332,6 +1332,7 @@ img {
 @media screen and (max-width:427px) {
     .modal {
         width: 90%;
+        padding: 68px 16px 20px 16px;
     }
 }
 
@@ -1385,7 +1386,7 @@ img {
     margin-bottom: 16px;
     width: 360px;
     height: 24px;
-    text-align: center;
+    text-align: start;
     color: var(--logo-up-nav-cl);
     font-size: 16px;
     font-weight: 500;
@@ -1395,9 +1396,26 @@ img {
 
 @media screen and (max-width:427px) {
     .modal-form-desk {
-        width: 240px;
+        width: 100%;
         height: 48px;
+        text-align: center;
     }
+}
+
+@media screen and (min-width:428px)  and (max-width:767px){
+    .modal-form-desk {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modal-form-desk {
+            text-align: center;
+        }
+}
+
+@media only screen and (min-width:1158px) {
+    .modal-form-desk
 }
 
 .modal-form-field {
