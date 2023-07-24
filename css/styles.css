@@ -1414,10 +1414,6 @@ img {
         }
 }
 
-@media only screen and (min-width:1158px) {
-    .modal-form-desk
-}
-
 .modal-form-field {
     display: block;
     margin-bottom: 4px;
@@ -1787,8 +1783,4 @@ img {
 .mobile-icon {
     width: 40px;
     height: 40px;
-}
-
-.mobile-social-icons {
-    
 }
